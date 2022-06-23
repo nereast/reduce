@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reduce tu energía</title>
+        <link rel="stylesheet" href="./css/animation.css"  href="https://use.typekit.net/pjj3zoh.css">  
+    </head>
+    <body>
+    
+        <!-- El Gamegui que estará arriba del juego -->
+        <canvas id="gameGUI_Up" width="770" height="40" >
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+
+        <!-- La pantalla del juego -->
+        <canvas id="gameScreen" width="380" height="180">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+
+        <!-- El Gamegui que estará abajo del juego -->
+        <canvas id="gameGUI_Down" width="770" height="40" >
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+
+        <!-- Sonido del fondo del juego -->
+        <audio id="gameMusic">
+            <source src="./sounds/gameMusic.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Sonido del teclado -->
+        <audio id="keyboardSound">
+            <source src="./sounds/keyboardSound.wav" type="audio/wav">
+        </audio>
+
+        <!-- Sonido del salto del jugador -->
+        <audio id="jumpSound">
+            <source src="./sounds/JumpingSound.wav" type="audio/wav">
+        </audio>
+
+        <!-- Sonido de la colisión del jugador con los dos enemigos (ENEMY y BACTERIUM) -->
+        <audio id="hurtSound">
+            <source src="./sounds/hurtSound.wav" type="audio/wav">
+        </audio>
+
+        <!-- Sonido de la colisión del jugador con los objetos -->
+        <audio id="collisionSound">
+            <source src="./sounds/CollisionSound.wav" type="audio/wav">
+        </audio>
+
+        <!-- Sonido de la colisión del enemigo (ENEMY) con los objetos -->
+        <audio id="enemySound">
+            <source src="./sounds/enemySound.wav" type="audio/wav">
+        </audio>
+
+        <!-- Sonido del estado GAME_OVER -->
+        <audio id="gameOverSound">
+            <source src="./sounds/gameOverSound.wav" type="audio/wav">
+        </audio>
+
+        <!-- Sonido del estado LEVELS_COMPLETED -->
+        <audio id="levelsCompletedSound">
+            <source src="./sounds/levelsCompletedSound.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Sonido del estado END_LEVELS -->
+        <audio id="endLevelsSound">
+            <source src="./sounds/endLevelSound.wav" type="audio/wav">
+        </audio>
+
+        <!-- Ficheros de JavaScript -->
+        <script src = "./src/constants.js"></script> 
+        <script src = "./src/globals.js"></script>
+        <script src = "./src/classes.js"></script>    
+        <script src = "./src/initialize.js"></script>  
+        <script src = "./src/events.js"></script>          
+        <script src = "./src/mainLoop.js"></script>
+        <script src = "./src/gameLogic.js"></script>
+        <script src = "./src/collision.js"></script>
+        <script src = "./src/gameRender.js"></script>
+         
+    </body>
+</html>
